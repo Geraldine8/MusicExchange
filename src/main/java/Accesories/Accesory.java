@@ -3,15 +3,15 @@ package Accesories;
 import Shop.ShopItem;
 
 public abstract class Accesory extends ShopItem {
-    private int quantity;
+    private String make;
 
-    public Accesory(double boughtPrice, double sellPrice, int quantity) {
+    public Accesory(double boughtPrice, double sellPrice, String make) {
         super(boughtPrice, sellPrice);
-        this.quantity = quantity;
+        this.make = make;
     }
 
-    public int getQuantity(){
-        return  this.quantity;
+    public String getMake(){
+        return  this.make;
     }
 
 
